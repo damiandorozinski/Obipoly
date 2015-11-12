@@ -12,7 +12,7 @@ namespace Obipoly.layout
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Dropbox\Obipoly\Obipoly\Obipoly\App_Data\Database1.mdf;Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Damian\Documents\Git\Obipoly\Obipoly\App_Data\Database1.mdf;Integrated Security=True";
             SqlConnection connection = new SqlConnection(connectionString);
             String sqlQuery = "SELECT * FROM Games";
             SqlCommand command = new SqlCommand(sqlQuery, connection);

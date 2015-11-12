@@ -21,9 +21,22 @@
         <div id="signup_box">
             <h2>Zarejestruj</h2>
             <div class="reg_box">
-                <label>Username: </label>
-                <input type="text" name="Username" />
+                <asp:Label ID="lblUsername" runat="server" Text="Nazwa użytkownika:"></asp:Label>
+                <asp:TextBox ID="txbUsername" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvUsername" runat="server" ErrorMessage="Pole wymagane" ControlToValidate="txbUsername"></asp:RequiredFieldValidator>
             </div>
+            <div class="reg_box">
+                <asp:Label ID="lblPassword" runat="server" Text="Hasło:"></asp:Label>
+                <asp:TextBox ID="txbPassword" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ErrorMessage="Pole wymagane" ControlToValidate="txbPassword"></asp:RequiredFieldValidator>
+            </div>
+            <div class="reg_box">
+                <asp:Label ID="lblConfirmPassword" runat="server" Text="Potwierdź hasło:"></asp:Label>
+                <asp:TextBox ID="txbConfirmPassword" runat="server"></asp:TextBox>
+                <asp:CompareValidator ID="cvConfirmPassword" runat="server" ErrorMessage="Hasła nie zgadzają się" ControlToValidate="txbConfirmPassword" ControlToCompare="txbPassword"></asp:CompareValidator>
+            </div>
+            <asp:Button ID="btnRegister" runat="server" Text="Zarejestruj" OnClick="registerUser" />
+            <asp:Label ID="lblRegistrationError" runat="server" Text="" ForeColor="Red"></asp:Label>
         </div>
         <div id="footer"></div>
     </div>
