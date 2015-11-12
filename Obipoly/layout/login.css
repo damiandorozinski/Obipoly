@@ -1,0 +1,40 @@
+﻿
+#container {
+    width: 80%;
+    min-height: 800px;
+    margin: auto;
+}
+
+#banner {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+#login_box, #signup_box {
+    width: 50%;
+    min-height: 500px;
+    background-color: grey;
+    float: left;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    background-color: darkgray;
+    clear: both;
+}
+
+#login_box > h2, #signup_box > h2 {
+    text-align: center;
+}
+
+.reg_box > label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+.reg_box > input {
+    width: 200px;
+}

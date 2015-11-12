@@ -1,0 +1,395 @@
+﻿body {}
+
+#board {
+	width: 1222px;
+	height: 1222px;
+	border: 1px solid black;
+	margin: auto;
+}
+
+#top_container {
+	width: 1222px;
+	height: 152px;
+	background-color: #FFA07A;
+}
+
+#left_container {
+	width: 152px;
+	height: 918px;
+	background-color: #7FFFD4;
+	float: left;
+}
+
+#center_container {
+	width: 916px;
+	height: 916px;
+	border: 1px solid black;
+	float: left;
+}
+
+#right_container {
+	width: 152px;
+	height: 918px;
+	background-color: #7FFFD4;
+	float: left;
+}
+
+#bottom_container {
+	width: 1222px;
+	height: 152px;
+	background-color: #FFA07A;
+	clear: both;
+}
+
+.corner {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+    position:relative;
+	float: left;
+}
+
+.field {
+	width: 100px;
+	height: 150px;
+	float: left;
+	border: 1px solid black;
+    position: relative;
+}
+
+.field_rotated {
+	width: 150px;
+	height: 100px;
+	border: 1px solid black;
+    
+}
+
+.field .status_bar{
+    width: inherit;
+    height: 40px;
+    border-bottom: 1px solid black;
+}
+
+.field .status_bar .hotel_placeholder{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    float:left;
+    margin: 3px 10px 3px 3px;
+}
+
+.field .status_bar .hotel_placeholder .house_placeholder{
+    width:12px;
+    height:12px;
+    margin: 1px;
+    float:left;
+    border: 1px solid black;
+}
+
+.field .status_bar .players_container {
+
+    float:left;
+    width:50px;
+    height:38px;
+}
+
+
+.field .status_bar .players_container .player_placeholder{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    float:left;
+    border: 1px solid black;
+    margin:2px;
+}
+
+.field .name_field{
+    margin:5px auto;
+    width:90px;
+    height:10px;
+    border: 1px solid black;
+}
+
+.field .image_field{
+    width:50px;
+    height:50px;
+    margin:5px;
+    margin:auto;
+    border: 1px solid black;
+}
+
+.field .price_field{
+    margin:auto;
+    margin-top:5px;
+    width:30px;
+    height:10px;
+    border: 1px solid black;
+}
+
+.field .owner_bar{
+    width:100%;
+    height:5px;
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+.field_rotated .status_bar_rotated_left{
+    width: 40px;
+    height: inherit;
+    border-right: 1px solid black;
+    float:left;
+}
+
+.field_rotated .status_bar_rotated_left .hotel_placeholder_rotated_left{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    float:left;
+    margin: 3px 10px 3px 3px;
+}
+
+.field_rotated .status_bar_rotated_left .hotel_placeholder_rotated_left .house_placeholder_rotated_left{
+    width:12px;
+    height:12px;
+    margin: 1px;
+    float:left;
+    border: 1px solid black;
+}
+
+.field_rotated .status_bar_rotated_left .players_container_rotated_left {
+       float:left;
+       margin:auto;
+       margin-top:10px;
+    width:38px;
+    height:50px;
+}
+
+
+.field_rotated .status_bar_rotated_left .players_container_rotated_left .player_placeholder_rotated_left{
+    
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    border: 1px solid black;
+    margin:2px;
+    float:left;
+}
+
+.field_rotated .name_field_rotated_left{
+    margin:5px auto;
+    margin-left:5px;
+    width:10px;
+    height:90px;
+    border: 1px solid black;
+    float:left;
+}
+
+.field_rotated .image_field_rotated_left{
+    width:50px;
+    height:50px;
+    top: 25%;
+    position:relative;
+    margin-left:5px;
+    border: 1px solid black;
+    float:left;
+}
+
+.field_rotated .price_field_rotated_left{
+    top: 35%;
+    position:relative;
+    margin-left:5px;
+    width:10px;
+    height:30px;
+    float:left;
+    border: 1px solid black;
+}
+
+.field_rotated .owner_bar_rotated_left{
+    text-align:end;
+    float:right;
+    width:5px;
+    height:100%;
+    border-left: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+.field_rotated .status_bar_rotated_right{
+    width: 40px;
+    height: inherit;
+    border-left: 1px solid black;
+    float:right;
+}
+
+.field_rotated .status_bar_rotated_right .hotel_placeholder_rotated_right{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    float:right;
+    margin: 3px 10px 3px 3px;
+}
+
+.field_rotated .status_bar_rotated_right .hotel_placeholder_rotated_right .house_placeholder_rotated_right{
+    width:12px;
+    height:12px;
+    margin: 1px;
+    float:right;
+    border: 1px solid black;
+}
+
+.field_rotated .status_bar_rotated_right .players_container_rotated_right {
+    float:right;
+    margin:auto;
+    margin-top:10px;
+    width:38px;
+    height:50px;
+}
+
+
+.field_rotated .status_bar_rotated_right .players_container_rotated_right .player_placeholder_rotated_right{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    border: 1px solid black;
+    margin:2px;
+    float:right;
+}
+
+.name_field_rotated_right{
+    margin:5px auto;
+    margin-right:5px;
+    width:10px;
+    height:90px;
+    border: 1px solid black;
+    float:right;
+}
+
+.image_field_rotated_right{
+    width:50px;
+    height:50px;
+    top: 25%;
+    position:relative;
+    margin-right:5px;
+    border: 1px solid black;
+    float:right;
+}
+
+.price_field_rotated_right{
+    top: 35%;
+    position:relative;
+    margin-right:5px;
+    width:10px;
+    height:30px;
+    float:right;
+    border: 1px solid black;
+}
+
+.owner_bar_rotated_right{
+    text-align:end;
+    float:left;
+    width:5px;
+    height:100%;
+    border-right: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+#field30 #prisoners_container{
+    margin-top:3px;
+    margin-right:5px;
+    float:right;
+    width:90px;
+    height:30px;
+}
+
+#field30 #prisoners_container .prisoner{
+    width:14px;
+    height:14px;
+     border: 1px solid black;
+     float: left;
+     margin:5px 3px 3px 3px;
+     
+}
+
+#field30 #guests_container{
+    float:left;
+    width:30px;
+    height:90px;
+    margin-top:25%;
+    margin-left:3px;
+}
+
+ .guest{
+    width:14px;
+    height:14px;
+     border: 1px solid black;
+     float: left;
+     margin:3px 3px 3px 5px;
+}
+
+#field30 #prison_label{
+    width:80px;
+    height:10px;
+    float:left;
+    margin:5px 5px 5px 24px;
+
+    border:1px solid black;
+}
+
+#field30 #prison_image{
+    width:50px;
+    height:50px;
+    float:left;
+    margin:5px 5px 5px 24px;
+    border:1px solid black;
+}
+
+.corner .players_container_corner{
+    margin:auto;
+    position:absolute;
+    left:20%;
+    top:5%;
+    width:95px;
+    height:25px;
+}
+
+.corner .name_field_corner{
+    width:90px;
+    height:10px;
+    border:1px solid black;
+    position:absolute;
+    top:25%;
+    left:20%;
+    margin:5px auto;
+}
+
+.corner .image_field_corner{
+    width:50px;
+    height: 50px;
+    margin:auto;
+    border:1px solid black;
+    position:absolute;
+    left:33%;
+    top:45%;
+
+}
